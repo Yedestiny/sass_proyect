@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif; }
+
+.header {
+  border-radius: 20px 20px 100px 100px;
+  border-color: #c3a896;
+  border: 3px solid #c3a896;
+  box-shadow: 5px 5px 10px #c3a896;
+  background-color: #efdecc;
+  width: 98vw;
+  height: 20vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .header img {
+    width: 15vw;
+    height: 15vh;
+    margin-right: 5vw; }
+  .header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 6vh;
+    font-weight: 700;
+    color: #b18888; }
+
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+    height: 30vh; }
+    .header img {
+      width: 30vw;
+      height: 20vh; } }
+
+/* Contenedor slider */
+.slider h1 {
+  color: #b18888;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 5vh;
+  text-align: center; }
+
+.contenedor-slider {
+  max-width: 80vw;
+  margin: 5vh auto auto auto;
+  max-height: 85vh; }
+  .contenedor-slider .mySlides {
+    display: flex;
+    justify-content: center; }
+  .contenedor-slider img {
+    max-width: 80vw;
+    max-height: 85vh;
+    border-radius: 20px; }
+  .contenedor-slider .texto_imagen {
+    position: relative;
+    top: -30vh;
+    height: 20vh;
+    width: 60vw;
+    margin-left: 2vh;
+    padding-left: 4vw;
+    padding-top: 3vh;
+    text-align: center;
+    background-color: #efdecc;
+    color: #b18888;
+    border-radius: 100px 100px 100px 100px;
+    border-color: #c3a896;
+    border: 3px solid #c3a896;
+    box-shadow: 5px 5px 10px #c3a896; }
+    .contenedor-slider .texto_imagen h1 {
+      color: #b18888;
+      font-family: "Dancing Script", cursive;
+      font-weight: 700;
+      font-size: 5vh; }
+
+/* animacion de fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 3s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@media (max-width: 1000px) {
+  .contenedor-slider .texto_imagen {
+    width: 73vw;
+    height: 18vh;
+    top: -23vh; } }
+
+.tratamientos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #efdecc;
+  width: 98vw;
+  margin: 2vh auto auto auto;
+  color: #b18888;
+  font-size: 3vh;
+  border-radius: 100px 100px 100px 100px;
+  border-color: #c3a896;
+  border: 3px solid #c3a896;
+  box-shadow: 5px 5px 10px #c3a896; }
+  .tratamientos li {
+    list-style: none; }
+  .tratamientos h1 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #b18888; }
+  .tratamientos .contenido {
+    width: 95vw;
+    height: 40vh;
+    margin: 3vh;
+    background-color: #cfa8a7; }
+  .tratamientos .borde_derecha {
+    display: flex;
+    align-items: center;
+    border-radius: 0 100px 0 100px;
+    border-color: #b18888;
+    border: 3px solid #b18888;
+    box-shadow: 5px 5px 10px #b18888; }
+    .tratamientos .borde_derecha img {
+      width: 40vw;
+      height: 35vh;
+      margin-left: 3vh;
+      border-radius: 20px; }
+    .tratamientos .borde_derecha div {
+      margin-left: 20vh;
+      width: 40vw;
+      height: 30vh;
+      padding-top: 5vh;
+      background-color: #efdecc;
+      text-align: center;
+      border-radius: 100px 100px 100px 100px;
+      border-color: #c3a896;
+      border: 3px solid #c3a896;
+      box-shadow: 5px 5px 10px #c3a896; }
+  .tratamientos .borde_izquierda {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 100px 0 100px 0;
+    border-color: #b18888;
+    border: 3px solid #b18888;
+    box-shadow: 5px 5px 10px #b18888; }
+    .tratamientos .borde_izquierda img {
+      width: 40vw;
+      height: 35vh;
+      margin-right: 3vh;
+      border-radius: 20px; }
+    .tratamientos .borde_izquierda div {
+      margin-right: 20vh;
+      width: 40vw;
+      height: 30vh;
+      padding-top: 5vh;
+      background-color: #efdecc;
+      text-align: center;
+      border-radius: 100px 100px 100px 100px;
+      border-color: #c3a896;
+      border: 3px solid #c3a896;
+      box-shadow: 5px 5px 10px #c3a896; }
+
+@media (max-width: 1000px) {
+  .tratamientos {
+    margin-top: -20vh; }
+    .tratamientos h1 {
+      font-size: 5vh; }
+    .tratamientos .borde_derecha div {
+      margin-left: 2vh; }
+    .tratamientos .borde_derecha img {
+      margin-right: 2vh; }
+    .tratamientos .borde_izquierda div {
+      margin-right: 2vh; }
+    .tratamientos .borde_izquierda img {
+      margin-left: 2vh; } }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 100px 100px 20px 20px;
+  border-color: #c3a896;
+  border: 3px solid #c3a896;
+  box-shadow: 5px 5px 10px #c3a896;
+  background-color: #efdecc;
+  width: 98vw;
+  height: 55vh;
+  margin: 4vh 0 0 0; }
+  .footer h1 {
+    font-family: "Dancing Script", cursive;
+    color: #b18888;
+    font-size: 6vh; }
+  .footer h3 {
+    font-family: "Roboto", sans-serif;
+    color: #b18888;
+    font-size: 2vh; }
+  .footer .contenido_footer {
+    display: flex;
+    justify-content: space-between; }
+    .footer .contenido_footer .mas {
+      margin-right: 8vw;
+      padding: 9vh; }
+    .footer .contenido_footer .redes_sociales {
+      margin-left: 8vw;
+      padding: 9vh; }
+    .footer .contenido_footer .logo_redes {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8vh; }
+      .footer .contenido_footer .logo_redes a {
+        color: #cfa8a7; }
+  .footer form input {
+    background-color: #cfa8a7;
+    height: 5vh;
+    width: 15vw;
+    color: white; }
+  .footer form button {
+    padding: 1vh;
+    background-color: #c3a896;
+    color: white; }
+
+@media (max-width: 1000px) {
+  .footer {
+    height: 65vh; } }
