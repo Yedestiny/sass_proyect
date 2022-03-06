@@ -1,0 +1,19 @@
+// variables
+@import 'variables';
+
+// ajustes globales
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: $fuente_texto;
+}
+
+// componente header
+@import 'components/header';
+// componente slider
+@import 'components/slider';
+//componente caracteristicas, donde estan los tratamientos
+@import'components/caracteristicas';
+//componente footer
+@import 'components/footer';

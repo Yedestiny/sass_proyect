@@ -1,0 +1,135 @@
+@mixin tipo_borde($border_radius) {
+    border-radius: $border_radius;
+    border-color: $color_secundario_oscuro;
+    border: 3px solid $color_secundario_oscuro;
+    box-shadow: 5px 5px 10px $color_secundario_oscuro;
+
+}
+
+.tratamientos{
+    // configuracion de alineado
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    //colores , margenes y texto
+    background-color: $color_principal;
+    width: 98vw;
+    margin: 2vh auto auto auto;
+    color: $color_secundario_oscuro;
+    font-size: 3vh;
+
+    // borde
+    border-radius: 100px 100px 100px 100px;
+    border-color: $color_principal_oscuro;
+    border: 3px solid $color_principal_oscuro;
+    box-shadow: 5px 5px 10px $color_principal_oscuro;
+    li{
+        list-style: none;
+    }
+    h1{
+        font-family: $fuente_titulo;
+        font-weight: 700;
+        font-size: 3.5rem;
+        color: $color_secundario_oscuro;       
+    }
+   
+    .contenido{
+        width: 95vw;
+        height: 40vh;
+        margin: 3vh;
+        background-color: $color_secundario;
+    }
+   
+    .borde_derecha{
+        // alineado
+        display: flex;
+        align-items: center;
+        // borde
+        @include tipo_borde(0 100px 0 100px);
+        img{
+            width: 40vw;
+            height: 35vh;
+            margin-left: 3vh;
+            border-radius: 20px;
+        }
+        div{
+            // posicion
+            margin-left: 20vh;
+            width: 40vw;
+            height: 30vh;
+            padding-top: 5vh;
+
+            // color y letra
+            background-color: $color_principal;
+            text-align: center;
+
+            // borde
+            border-radius: 100px 100px 100px 100px;
+            border-color: $color_principal_oscuro;
+            border: 3px solid $color_principal_oscuro;
+            box-shadow: 5px 5px 10px $color_principal_oscuro;
+        }
+    }
+
+    .borde_izquierda{
+        // alineado
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        // borde
+        @include tipo_borde(100px 0 100px 0);
+
+        img{
+            width: 40vw;
+            height: 35vh;
+            margin-right: 3vh;
+            border-radius: 20px;
+        }
+
+        div{
+            // alineado
+            margin-right: 20vh;
+            width: 40vw;
+            height: 30vh;
+            padding-top: 5vh;
+            //texto y color
+            background-color: $color_principal;
+            text-align: center;
+            // borde            
+            border-radius: 100px 100px 100px 100px;
+            border-color: $color_principal_oscuro;
+            border: 3px solid $color_principal_oscuro;
+            box-shadow: 5px 5px 10px $color_principal_oscuro;  
+        }
+    }
+}
+// media para pantallas inferiores a 1000 pixeles
+@media (max-width: 1000px)  {
+  .tratamientos{
+      margin-top: -20vh;
+      h1{
+          font-size: 5vh;
+      }
+     .borde_derecha{
+         div{
+             margin-left: 2vh;
+             
+         }
+         img{
+             margin-right: 2vh;
+         }
+     }
+     .borde_izquierda{
+        div{
+            margin-right: 2vh;
+            
+        }
+        img{
+            margin-left: 2vh;
+        }
+    }
+  }
+}
+

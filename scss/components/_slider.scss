@@ -1,0 +1,82 @@
+/* Contenedor slider */
+.slider{
+  h1{
+    color: $color_secundario_oscuro;
+    font-family: $fuente_titulo;
+    font-weight: 700;
+    font-size: 5vh;
+    text-align: center;
+  }
+}
+.contenedor-slider {
+  max-width: 80vw;
+  margin: 5vh auto auto auto;
+  max-height:85vh;
+ 
+  .mySlides{
+    display: flex;
+    justify-content: center;
+  }
+  img{
+    max-width: 80vw;
+    max-height:85vh;
+    border-radius: 20px;
+  }
+  // div con el texto que aparece en la imagen del slider
+  .texto_imagen{
+    // posicion
+    position: relative;
+    top: -30vh;
+    height: 20vh;
+    width: 60vw;
+    margin-left: 2vh;
+    padding-left: 4vw;
+    padding-top: 3vh;
+    //colores y texto
+    text-align: center;
+    background-color: $color_principal;
+    color: $color_secundario_oscuro;
+
+    // borde
+    border-radius: 100px 100px 100px 100px;
+    border-color: $color_principal_oscuro;
+    border: 3px solid $color_principal_oscuro;
+    box-shadow: 5px 5px 10px $color_principal_oscuro;
+
+    h1{
+      color: $color_secundario_oscuro;
+      font-family: $fuente_titulo;
+      font-weight: 700;
+      font-size: 5vh;
+    }
+  }
+}
+  
+/* animacion de fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+  
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+// media para pantallas inferiores a 1000 pixeles
+@media (max-width: 1000px)  {
+  .contenedor-slider{
+    .texto_imagen{
+      width: 73vw;
+      height: 18vh;
+      top: -23vh;
+      
+    }
+  }
+}

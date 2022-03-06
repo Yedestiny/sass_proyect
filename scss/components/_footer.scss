@@ -1,0 +1,71 @@
+// footer
+.footer{
+    //alineado
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // borde
+    border-radius:100px 100px 20px 20px ;
+    border-color: $color_principal_oscuro;
+    border: 3px solid $color_principal_oscuro;
+    box-shadow: 5px 5px 10px $color_principal_oscuro;
+
+    // altura-ancho y color
+    background-color: $color_principal;
+    width: 98vw;
+    height: 55vh;
+    margin: 4vh 0 0 0;
+
+    h1{
+        font-family: $fuente_titulo;
+        color: $color_secundario_oscuro;
+        font-size: 6vh;
+    }
+    h3{
+        font-family: $fuente_texto;
+        color: $color_secundario_oscuro;
+        font-size: 2vh;
+    }
+
+    .contenido_footer{
+        display: flex;
+        justify-content: space-between;
+        .mas{
+            margin-right: 8vw;
+            padding: 9vh;
+        }
+        .redes_sociales{
+            margin-left: 8vw;
+            padding: 9vh;
+        }
+
+        .logo_redes{
+            display: flex;
+            justify-content: space-between;
+            font-size: 8vh;
+            a{
+                color: $color_secundario;
+            }
+        }
+    }
+
+    form{
+        input{
+            background-color: $color_secundario;
+            height: 5vh;
+            width: 15vw;
+            color: white;
+        }
+        button{
+            padding: 1vh;
+            background-color: $color_principal_oscuro;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 1000px)  {
+    .footer{
+        height:65vh;
+    }
+}
